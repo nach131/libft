@@ -6,14 +6,14 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/11/09 21:03:13 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/11/21 19:39:24 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ═══ NAMES ═══════════════════════════════════════════════════════════════════#
 
+HEADER = libft.h
 NAME = libft.a
-INCLUDES = inc
 
 # ═══ COLORS ══════════════════════════════════════════════════════════════════#
 
@@ -34,6 +34,7 @@ MKDIR		= -mkdir -p
 
 # ═══ DIRECTORIES ═════════════════════════════════════════════════════════════#
 
+INCLUDES = inc/
 SRC_DIR = src/
 OBJ_DIR = obj/
 
@@ -101,7 +102,6 @@ DEPS = $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
 all: $(NAME)
 
 $(NAME) : $(OBJS)
-
 			@$(AR) $(NAME) $(OBJS)
 			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
 
