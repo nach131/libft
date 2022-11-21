@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 13:22:19 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:12:09 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:15 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 // La función encuentra la primera aparición de la subcadena needle en la
 // cadena haystack. Los caracteres finales '\0' no se comparan.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 19:45:57 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:08:20 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 // ascii 0 to 127
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 23:17:24 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/19 11:16:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:25 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //	#1. El número ’n’ a escribir.
 //	#2. El file descriptor en el que escribir.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_putchar(int fd_p, char c)
 {
@@ -34,7 +34,7 @@ void	ft_putnbr_fd(int n, int fd)
 		{
 			ft_putchar(fd, '-');
 			n = -n;
-		}	
+		}
 	}
 	if (n > 9)
 		ft_putnbr_fd(n / 10, fd);

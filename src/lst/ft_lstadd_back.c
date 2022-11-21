@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 10:40:01 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:08:58 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //	#1. La dirección de un puntero al primer elemento de una lista.
 //	#2. Un puntero al elemento nuevo que añadir a la lista.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {

@@ -6,20 +6,20 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 14:56:24 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/19 17:32:16 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	Aplica la función ’f’ a cada caracter de la string dada como argumento, 
+//	Aplica la función ’f’ a cada caracter de la string dada como argumento,
 //	pasando su índice como primer argumento. Cada caracter se pasa como
 //	una dirección a ’f’, por si hace falta modificarlo
 //	#1. La string que iterar.
 //	#2. La función a aplicar a cada caracter.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 22:19:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:25 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //  busca la primera aparición del carácter c (un carácter sin signo) en la
 //  cadena a la que apunta el argumento str.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

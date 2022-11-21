@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:09:10 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:40:45 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:03 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 // ascii: 65-A to 90-Z; 97-a to 122-z
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

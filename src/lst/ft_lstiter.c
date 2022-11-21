@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 16:24:16 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:09:27 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //	#2. Un puntero a la función que se aplicará a cada
 //		elemento de la lista.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstiter(t_list *lst, void (*funcion)(void *))
 {

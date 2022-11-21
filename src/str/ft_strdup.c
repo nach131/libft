@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 18:50:53 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:21 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //   el puntero posteriormente puede usarse como argumento de la función free
 //   para liberar la memoria.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

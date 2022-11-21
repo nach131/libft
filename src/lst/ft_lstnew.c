@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 20:06:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:09:54 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //inicializa a NULL.
 // #1. El contenido sobre el que crear un nuevo elemento.
 
-#include"libft.h"
+#include "libft.h"
 
 t_list	*ft_lstnew(void *content)
 {

@@ -6,16 +6,16 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 12:32:21 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:25 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	convert a string to an integer 
+//	convert a string to an integer
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
@@ -48,7 +48,7 @@ int	ft_atoi(const char *str)
 // 	int numero;
 // 	char string[20] = "+42 Barcelona";
 // 	//	char	string[20] = "--123";
-// 
+//
 // 	numero = ft_atoi(string);
 // 	printf("\nnumero: %d\n", numero);
 // }

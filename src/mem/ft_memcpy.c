@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 12:35:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:33 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //  copia n caracteres del área de memoria src al área de memoria dest.
 //  retornar NULL en el caso de que los dos argumentos se han NULL
 
-#include"libft.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

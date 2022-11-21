@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 17:37:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:12:14 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 // busca la última aparición del carácter c (un carácter sin signo)
 // en la cadena a la que apunta, mediante el argumento str.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

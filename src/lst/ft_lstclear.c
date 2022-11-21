@@ -6,21 +6,21 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 16:01:43 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/08/22 13:07:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:25 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	Elimina y libera cada uno de los elementos de la lista dada, 
+//	Elimina y libera cada uno de los elementos de la lista dada,
 //	utilizando la función ’del’ y free(3).
 //	Por último, el puntero a la lista debe ponerse a NULL.
 //	#1. La dirección del puntero a un elemento.
 //	#2. Un puntero a la función utilizada para eliminar el contenido de
 //		cada elemento.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

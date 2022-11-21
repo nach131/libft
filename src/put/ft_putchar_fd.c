@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 17:35:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:57 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //	#1. El caracter a enviar.
 //	#2. El file descriptor sobre el que escribir.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

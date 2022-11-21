@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 18:18:15 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/10 00:49:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //	#1. La string que imprimir.
 //	#2. El file descriptor sobre el que escribir.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

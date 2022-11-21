@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 10:19:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:12:24 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 // start	- El índice de la string por el que empezar la nueva string.
 // len		- La longitud máxima de la nueva string.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

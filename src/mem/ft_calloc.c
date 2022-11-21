@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 10:33:32 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:13 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 //	count	- This is the number of elements to be allocated.
 //	size	- Este es el tamaño de los elementos.
 
-#include"libft.h"
+#include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {

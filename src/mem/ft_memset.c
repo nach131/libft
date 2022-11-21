@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 18:15:11 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:45 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 // 		de caracteres sin firmar de este valor.
 // n 	− Este es el número de bytes que se establecerá en el valor.
 
-#include"libft.h"
+#include "libft.h"
 
 void	*ft_memset(void *str, int c, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 19:40:29 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/18 22:34:43 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 // suma los valores ASCii de los char de los str y realiza la resta str1 - str2
 // devolviendo el resultado.
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -39,7 +39,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	char 	str1[] = "ABCDF";
 // 	char 	str2[] = "ABCdF";
 // 	int		res;
-// 
+//
 // 	res = ft_strncmp(str1, str2, 5);
 // 	printf("\nmain:\n res: %d\n", res);
 // }

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 19:51:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:09:33 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 //	Devuelve el último elemento de una lista.
 //	#1. El principio de una lista.
 
-#include"libft.h"
+#include "libft.h"
 
 t_list	*ft_lstlast(t_list *lst)
 {

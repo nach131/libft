@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 09:35:41 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:08:16 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:02 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 //Ascii 48-0 to 57-9, 65-A to 90-A, 97-a to 122-z
 // llamo a ft_isalpha y ft_isdigit
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/24 13:06:45 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:24 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 //		sin firmar de este valor (unsigned)
 //	n	- Este es el número de bytes a analizar.
 
-#include"libft.h"
+#include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {

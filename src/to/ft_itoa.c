@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/09 08:40:22 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:12:56 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:17 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 // como argumento. Los números negativos deben gestionarse correctamente.
 // #1. El entero a convertir.
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_num_digitos(int n)
 {

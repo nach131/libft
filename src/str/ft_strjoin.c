@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 13:22:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:42 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:20 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 // *s1 - La string prefijo.
 // *s2 - La string sufijo.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

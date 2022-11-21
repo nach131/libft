@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 18:35:21 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/19 11:15:50 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //		#1. La string que escribir.
 //		#2. El file descriptor sobre el que escribir.
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

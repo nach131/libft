@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 15:02:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/10 13:11:00 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 //  *s1- La string a recortar.
 //  *ser- El conjunto de caracteres utilizado como referencia para el recorte.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

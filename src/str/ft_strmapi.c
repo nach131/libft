@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 11:10:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/06/19 14:55:51 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:17 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 //	#1. La string que iterar.
 //	#2. Un puntero a la función que aplicar a cada carácter.
 
-#include"libft.h"
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 12:13:15 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:18 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 // src 	- Es es el puntero original de datos que se va a copia.
 // size - Este es el número de bytes a copiar.
 
-#include"libft.h"
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

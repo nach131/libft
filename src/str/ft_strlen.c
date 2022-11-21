@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:57 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:18 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 // La función strlen() toma una cadena como argumento y devuelve su longitud.
 // El valor devuelto es de tipo size_t (el tipo entero sin signo).
 
-#include"libft.h"
+#include "libft.h"
 
 int	ft_strlen(const char *s)
 {

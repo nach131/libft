@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:10:15 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 // la función borra los datos en los n bytes de la memoria comenzando en la ubi-
 // cación señalada por s, escribiendo ceros (bytes que contiene '\0') a esa área
 
-#include"libft.h"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

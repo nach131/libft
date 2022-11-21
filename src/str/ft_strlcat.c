@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 21:01:03 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/13 01:11:47 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/21 19:01:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 // Concatena dos string el dst tiene que tener capacidad para los datos a copiar
 
-#include"libft.h"
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
