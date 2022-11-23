@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:37:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/10 00:43:47 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/23 22:25:07 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,15 @@
 # define UWHITE "\033[4;37m"
 
 #endif
+
+# define DHOR "\u2550"
+# define LSHADE "\u2591"
+# define FBLOCK "\u2588"
+# define EBLOCK "\u258d"
+# define FLECHAD "\u2911"
+
+// DHOR		════════════════════════
+// LSHADE	░░░░░░░░░░░░░░░░░░░░░░░░
+// FBLOCK	████████████████████████
+// EBLOCK	▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍
+// FLECHAD	⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑
