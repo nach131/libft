@@ -6,14 +6,13 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/11/22 19:40:29 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/11/23 17:58:32 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # ═══ NAMES ═══════════════════════════════════════════════════════════════════#
 
 NAME = libft.a
-HEADERS	= libft.h
 
 # ═══ COLORS ══════════════════════════════════════════════════════════════════#
 
@@ -105,7 +104,7 @@ $(NAME) : $(OBJS)
 			@$(AR) $(NAME) $(OBJS)
 			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
 
-$(OBJ_DIR)%.o : $(SRC_DIR)%.c $(INCLUDES)$(HEADERS)
+$(OBJ_DIR)%.o : $(SRC_DIR)%.c
 			@$(MKDIR) $(dir $@)
 			@echo "$(ORANGE) Compilando  ➟  $(BLUE)$< $(WHITE)"
 			@$(CC) $(CFLAGS) -I$(INCLUDES) -MMD -MP -c $< -o $@
