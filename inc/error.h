@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 21:01:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/30 19:12:28 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/30 19:19:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,19 @@
 
 void	ft_message(int err, char *msg);
 
-typedef enum s_error
+typedef enum e_error
 {
 	DANGER,
 	WARNING,
 	INFO,
 	SUCCESS,
 }		t_error;
+
+typedef enum e_bool
+{
+	FALSE,
+	TRUE,
+}	t_bool;
 
 #endif
 

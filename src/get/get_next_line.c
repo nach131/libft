@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 17:30:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/10 00:51:51 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/30 19:17:39 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "get_next_line.h"
 #include "libft.h"
 
-void	ft_cut_tp(t_print *tp, int len_trim)
+void	ft_cut_tp(t_get *tp, int len_trim)
 {
 	char	*str;
 	int		len_tp;
@@ -39,7 +39,7 @@ void	ft_cut_tp(t_print *tp, int len_trim)
 	free(str);
 }
 
-void	ft_tp_line_ex(t_print *tp, char **line, int len_tp, char *str)
+void	ft_tp_line_ex(t_get *tp, char **line, int len_tp, char *str)
 {
 	char	*tmp_tp;
 
@@ -64,7 +64,7 @@ void	ft_tp_line_ex(t_print *tp, char **line, int len_tp, char *str)
 	ft_cut_tp(tp, len_tp);
 }
 
-int	ft_tp_line(t_print *tp, char **line)
+int	ft_tp_line(t_get *tp, char **line)
 {
 	char	*str;
 	int		len_tp;
@@ -91,7 +91,7 @@ int	ft_tp_line(t_print *tp, char **line)
 	return (1);
 }
 
-int	ft_buffer(int fd, t_print *tp, char **line)
+int	ft_buffer(int fd, t_get *tp, char **line)
 {
 	if (!*tp->content)
 		tp->size_buf = read(fd, tp->content, BUFFER_SIZE);
@@ -108,13 +108,13 @@ int	ft_buffer(int fd, t_print *tp, char **line)
 
 char	*get_next_line(int fd)
 {
-	static t_print	*tp;
+	static t_get	*tp;
 	char			*line;
 
 	if (fd < 0 || BUFFER_SIZE < 1)
 		return (NULL);
 	if (!tp)
-		tp = (t_print *)ft_calloc(sizeof(t_print), 1);
+		tp = (t_get *)ft_calloc(sizeof(t_get), 1);
 	if (!tp)
 		return (NULL);
 	line = (NULL);

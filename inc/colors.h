@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:37:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/30 19:10:24 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/11/30 19:18:35 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,6 @@
 # define UCYAN "\033[4;36m"
 # define UWHITE "\033[4;37m"
 
-#endif
-
 # define DHOR "\u2550"
 # define LSHADE "\u2591"
 # define MSHADE "\u2592"
@@ -54,6 +52,8 @@
 # define FBLOCK "\u2588"
 # define EBLOCK "\u258d"
 # define FLECHAD "\u2911"
+
+#endif
 
 // DHOR		════════════════════════
 // LSHADE	░░░░░░░░░░░░░░░░░░░░░░░░
