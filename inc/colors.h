@@ -6,7 +6,11 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:37:54 by nmota-bu          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/12/04 23:07:05 by nmota-bu         ###   ########.fr       */
+=======
+/*   Updated: 2022/11/30 19:18:35 by nmota-bu         ###   ########.fr       */
+>>>>>>> 61bda8f0baafac727a44b637680a6c50b41742ff
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +48,7 @@
 # define UCYAN "\033[4;36m"
 # define UWHITE "\033[4;37m"
 
+<<<<<<< HEAD
 // # Background
 # define BGBLACK "\033[40m"
 # define BGRED "\033[41m"
@@ -53,5 +58,22 @@
 # define BGMAGENTA "\033[45m"
 # define BGCYAN "\033[46m"
 # define BGWHITE "\033[47m"
+=======
+# define DHOR "\u2550"
+# define LSHADE "\u2591"
+# define MSHADE "\u2592"
+# define DSHADE "\u2593"
+# define FBLOCK "\u2588"
+# define EBLOCK "\u258d"
+# define FLECHAD "\u2911"
+>>>>>>> 61bda8f0baafac727a44b637680a6c50b41742ff
 
 #endif
+
+// DHOR		════════════════════════
+// LSHADE	░░░░░░░░░░░░░░░░░░░░░░░░
+// MSHADE	▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+// MSHADE	▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+// FBLOCK	████████████████████████
+// EBLOCK	▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍
+// FLECHAD	⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑

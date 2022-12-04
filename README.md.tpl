@@ -40,7 +40,7 @@
 
 ### put
 
-> [`ft_putchar_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putchar_fd.c), [`ft_putendl_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putendl_fd.c), [`ft_putnbr_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putnbr_fd.c), [`ft_putstr_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putstr_fd.c)
+> [`ft_putchar_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putchar_fd.c), [`ft_putendl_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putendl_fd.c), [`ft_putnbr_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putnbr_fd.c), [`ft_putstr_fd`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putstr_fd.c), [`ft_putuni`](https://github.com/nach131/libft_plus/tree/main/src/put/ft_putuni.c)
 
 ### str
 

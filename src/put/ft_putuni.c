@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_message.c                                       :+:      :+:    :+:   */
+/*   ft_putuni.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/09 20:48:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/23 20:51:01 by nmota-bu         ###   ########.fr       */
+/*   Created: 2022/11/23 20:39:01 by nmota-bu          #+#    #+#             */
+/*   Updated: 2022/11/23 22:26:51 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,31 @@
 #include "colors.h"
 #include "ft_printf.h"
 
-void	ft_message(int err, char *msg)
+void	ft_putuni(int n, char *str, char *color)
 {
-	if (err == 0)
-		ft_printf(RED"%s", msg);
-	else if (err == 1)
-		ft_printf(YELLOW"%s", msg);
-	else if (err == 2)
-		ft_printf(BLUE"%s", msg);
-	else if (err == 3)
-		ft_printf(GREEN"%s", msg);
+	int	i;
+
+	i = 0;
+	ft_printf(color);
+	while (i < n)
+	{
+		ft_printf("%s", str);
+		i++;
+	}
 	ft_printf(WHITE"\n");
 }
+
+// int main()
+// {
+// 	ft_putuni(24, DHOR, YELLOW);
+// 	ft_putuni(24, LSHADE, RED);
+// 	ft_putuni(24, FBLOCK, ORANGE);
+// 	ft_putuni(24, EBLOCK, GREEN);
+// 	ft_putuni(24, FLECHAD, CYAN);
+// }
+
+// ════════════════════════
+// ░░░░░░░░░░░░░░░░░░░░░░░░
+// ████████████████████████
+// ▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍▍
+// ⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑⤑
