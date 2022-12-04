@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 17:30:14 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/30 19:17:39 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/03 00:00:59 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE < 1)
 		return (NULL);
 	if (!tp)
-		tp = (t_get *)ft_calloc(sizeof(t_get), 1);
+		tp = (t_get *)ft_calloc(1, sizeof(t_get));
 	if (!tp)
 		return (NULL);
 	line = (NULL);
