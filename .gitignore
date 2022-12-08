@@ -18,3 +18,4 @@ sources/exe
 node_modules/
 ._*
 *.d
+package-lock.json

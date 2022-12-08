@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nach131/get_next_line.git"
+    "url": "git+https://github.com/nach131/libft_plus.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nach131/get_next_line/issues"
+    "url": "https://github.com/nach131/libft_plus/issues"
   },
-  "homepage": "https://github.com/nach131/get_next_line#readme",
+  "homepage": "https://github.com/nach131/libft_plus#readme",
   "dependencies": {
     "axios": "0.27.2",
     "dotenv": "16.0.1"
