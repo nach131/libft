@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 15:36:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/07 02:18:32 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/15 11:34:20 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 #include "libft.h"
 
-void ft_delitem(void *tmp)
+void	ft_delitem(void *tmp)
 {
 	tmp = NULL;
 	free(tmp);
