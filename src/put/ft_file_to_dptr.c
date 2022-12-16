@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/15 11:35:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/15 18:54:21 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,27 @@
 
 int static	g_rows;
 
-void static	is_line(char *line, char **res, int control, int *write)
+// void static	is_line(char *line, char **res, int control, int *write)
+// {
+// 	int static	i;
+
+// 	if (!i)
+// 		i = 0;
+// 	if (control == FALSE)
+// 		g_rows += 1;
+// 	else
+// 	{
+// 		res[i] = ft_substr(line, 0, 0xffffffff);
+// 		i += 1;
+// 		if (g_rows == i)
+// 			*write = TRUE;
+// 	}
+// }
+
+void static is_line(char *line, char **res, int control, int *write)
 {
-	int static	i;
+	int static i;
+	int len;
 
 	if (!i)
 		i = 0;
@@ -31,7 +49,12 @@ void static	is_line(char *line, char **res, int control, int *write)
 		g_rows += 1;
 	else
 	{
-		res[i] = ft_substr(line, 0, 0xffffffff);
+		len = ft_strlen(line);
+		if (line[len - 1] == '\n')
+			res[i] = ft_substr(line, 0, ft_strlen(line) - 1);
+		else
+			res[i] = ft_substr(line, 0, len);
+		// res[i] = ft_substr(line, 0, 0xffffffff);
 		i += 1;
 		if (g_rows == i)
 			*write = TRUE;
