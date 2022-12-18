@@ -6,13 +6,19 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/18 12:31:14 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/18 13:29:59 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
+
+// Retorna el contenido de un fichero a un char doble puntero
+// Cada linea en una dirección diferente del array.
+// Primera linea arr[0], arr[1]...
+// #1. El path incluido el nombre del fichero a procesar.
+// #2. Opción 1 se incluira el salto de linea \n, 0 se quitara el salto.
 
 #include <fcntl.h>
 #include "libft.h"
@@ -24,6 +30,7 @@
 #define MSG_DAN_0 "File not found"
 
 int static	g_rows;
+int			g_line;
 
 //==================esto para que incluir \n===============================
 // void static	is_line(char *line, char **res, int control, int *write)
@@ -55,7 +62,7 @@ void static	is_line(char *line, char **res, int control, int *write)
 	else
 	{
 		len = ft_strlen(line);
-		if (line[len - 1] == '\n')
+		if (line[len - 1] == '\n' && g_line == 0)
 			res[i] = ft_substr(line, 0, ft_strlen(line) - 1);
 		else
 			res[i] = ft_substr(line, 0, len);
@@ -100,12 +107,13 @@ char	**open_file(char *file, char **res, int control, int *write)
 	}
 }
 
-char	**ft_file_to_dptr(char *file)
+char	**ft_file_to_dptr(char *file, int line)
 {
 	char	**res;
 	int		control;
 	int		write;
 
+	g_line = line;
 	g_rows = 0;
 	res = NULL;
 	control = FALSE;
@@ -113,7 +121,7 @@ char	**ft_file_to_dptr(char *file)
 	return (open_file(file, res, control, &write));
 }
 
-//============================================================================
+// ============================================================================
 
 // void free_cur(char **str)
 // {
@@ -134,7 +142,8 @@ char	**ft_file_to_dptr(char *file)
 // 	char *file = "ft_putuni.c";
 // 	int i;
 
-// 	cur = ft_file_to_dptr(file);
+// para incluir salto de line \n 1, para no 0
+// 	cur = ft_file_to_dptr(file, 1);
 // 	i = 0;
 // 	if (cur)
 // 	{

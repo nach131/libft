@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/15 11:36:38 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/18 13:20:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putuni(int n, char *str, char *color);
-char	**ft_file_to_dptr(char *file);
+char **ft_file_to_dptr(char *file, int line);
 
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
