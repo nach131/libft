@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/15 18:54:21 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/18 12:31:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,17 @@
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
 #include <fcntl.h>
-#include "error.h"
 #include "libft.h"
+#include "error.h"
+#include "colors.h"
 #include "get_next_line.h"
+#include "ft_printf.h"
+
+#define MSG_DAN_0 "File not found"
 
 int static	g_rows;
 
+//==================esto para que incluir \n===============================
 // void static	is_line(char *line, char **res, int control, int *write)
 // {
 // 	int static	i;
@@ -38,10 +43,10 @@ int static	g_rows;
 // 	}
 // }
 
-void static is_line(char *line, char **res, int control, int *write)
+void static	is_line(char *line, char **res, int control, int *write)
 {
-	int static i;
-	int len;
+	int static	i;
+	int			len;
 
 	if (!i)
 		i = 0;
@@ -54,10 +59,18 @@ void static is_line(char *line, char **res, int control, int *write)
 			res[i] = ft_substr(line, 0, ft_strlen(line) - 1);
 		else
 			res[i] = ft_substr(line, 0, len);
-		// res[i] = ft_substr(line, 0, 0xffffffff);
 		i += 1;
 		if (g_rows == i)
 			*write = TRUE;
+	}
+}
+
+void static	error_file(int fd)
+{
+	if (fd < 0)
+	{
+		ft_message(DANGER, MSG_DAN_0);
+		exit(EXIT_FAILURE);
 	}
 }
 
@@ -67,6 +80,7 @@ char	**open_file(char *file, char **res, int control, int *write)
 	char	*line;
 
 	fd = open(file, O_RDONLY);
+	error_file(fd);
 	while (1)
 	{
 		line = get_next_line(fd);
@@ -99,6 +113,8 @@ char	**ft_file_to_dptr(char *file)
 	return (open_file(file, res, control, &write));
 }
 
+//============================================================================
+
 // void free_cur(char **str)
 // {
 // 	int i;
@@ -115,7 +131,7 @@ char	**ft_file_to_dptr(char *file)
 // int main(void)
 // {
 // 	char **cur;
-// 	char *file = "min.ber";
+// 	char *file = "ft_putuni.c";
 // 	int i;
 
 // 	cur = ft_file_to_dptr(file);
