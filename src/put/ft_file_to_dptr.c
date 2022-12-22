@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/18 13:29:59 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/22 20:37:16 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,31 +32,11 @@
 int static	g_rows;
 int			g_line;
 
-//==================esto para que incluir \n===============================
-// void static	is_line(char *line, char **res, int control, int *write)
-// {
-// 	int static	i;
-
-// 	if (!i)
-// 		i = 0;
-// 	if (control == FALSE)
-// 		g_rows += 1;
-// 	else
-// 	{
-// 		res[i] = ft_substr(line, 0, 0xffffffff);
-// 		i += 1;
-// 		if (g_rows == i)
-// 			*write = TRUE;
-// 	}
-// }
-
 void static	is_line(char *line, char **res, int control, int *write)
 {
-	int static	i;
+	int static	i = 0;
 	int			len;
 
-	if (!i)
-		i = 0;
 	if (control == FALSE)
 		g_rows += 1;
 	else
@@ -142,8 +122,7 @@ char	**ft_file_to_dptr(char *file, int line)
 // 	char *file = "ft_putuni.c";
 // 	int i;
 
-// para incluir salto de line \n 1, para no 0
-// 	cur = ft_file_to_dptr(file, 1);
+// 	para incluir salto de line \n 1, para no 0 cur = ft_file_to_dptr(file, 1);
 // 	i = 0;
 // 	if (cur)
 // 	{
