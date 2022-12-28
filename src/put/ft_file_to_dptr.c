@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/22 20:37:16 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/28 10:17:56 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,8 @@ char	**ft_file_to_dptr(char *file, int line)
 // 	char *file = "ft_putuni.c";
 // 	int i;
 
-// 	para incluir salto de line \n 1, para no 0 cur = ft_file_to_dptr(file, 1);
+// 	para incluir salto de line \n 1, para no 0
+// 	cur = ft_file_to_dptr(file, 1);
 // 	i = 0;
 // 	if (cur)
 // 	{

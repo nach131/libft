@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/12/15 11:28:36 by nmota-bu         ###   ########.fr        #
+#    Updated: 2022/12/28 12:06:37 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem
 
 MEM_FILES = ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
-			ft_memset
+			ft_memset ft_free_dptr
 
 PUT_FILES = ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_putuni \
 			ft_file_to_dptr
