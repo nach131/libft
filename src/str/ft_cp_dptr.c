@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/28 12:41:32 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2022/12/28 13:08:10 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@
 // Realiza la copia de un doble puntero de char
 // devuelve un doble punterto de char.
 
-// #include "libft.h"
-#include "../../inc/libft.h"
-#include "../../inc/ft_printf.h"
-#include "../../inc/colors.h"
+#include "libft.h"
+// #include "../../inc/libft.h"
+// #include "../../inc/ft_printf.h"
+// #include "../../inc/colors.h"
 
 char	**ft_cp_dptr(char **ori)
 {
