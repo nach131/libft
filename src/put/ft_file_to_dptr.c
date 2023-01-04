@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/28 10:17:56 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/01/04 17:46:36 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@
 #include "ft_printf.h"
 
 #define MSG_DAN_0 "File not found"
+#define MSG_DAN_1 "File is empty"
 
 int static	g_rows;
 int			g_line;
@@ -61,6 +62,12 @@ void static	error_file(int fd)
 	}
 }
 
+void static	error_empty(void)
+{
+	ft_message(DANGER, MSG_DAN_1);
+	exit(EXIT_FAILURE);
+}
+
 char	**open_file(char *file, char **res, int control, int *write)
 {
 	int		fd;
@@ -73,6 +80,8 @@ char	**open_file(char *file, char **res, int control, int *write)
 		line = get_next_line(fd);
 		if (line == NULL)
 		{
+			if (!g_rows)
+				error_empty();
 			if (!res)
 				res = (char **)ft_calloc(g_rows + 1, sizeof(char *));
 			control = TRUE;
@@ -119,10 +128,12 @@ char	**ft_file_to_dptr(char *file, int line)
 // int main(void)
 // {
 // 	char **cur;
-// 	char *file = "ft_putuni.c";
+// 	// char *file = "ft_putuni.c";
+// 	char *file = "uno.c";
+// 	// char *file = "nada.c";
 // 	int i;
 
-// 	para incluir salto de line \n 1, para no 0
+// 	// para incluir salto de line \n 1, para no 0
 // 	cur = ft_file_to_dptr(file, 1);
 // 	i = 0;
 // 	if (cur)
@@ -136,4 +147,4 @@ char	**ft_file_to_dptr(char *file, int line)
 // 	free_cur(cur);
 // }
 
-// gcc get_to_doble_ptr.c -g3 ../../sources/libft/libft.a
+// gcc ft_file_to_dptr.c -g3 ../../sources/libft/libft.a

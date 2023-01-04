@@ -10,6 +10,7 @@
 *.swl
 *.swn
 *.o
+obj/
 sources/obj
 sources/libft/obj
 sources/exe
