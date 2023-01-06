@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2022/12/28 13:13:04 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/01/06 23:58:05 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ STR_FILES = ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
 			ft_strlcpy ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr \
 			ft_strtrim ft_substr ft_cp_dptr
 
-TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper
+TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper ft_abs
 
 GET_FILES = get_next_line
 
