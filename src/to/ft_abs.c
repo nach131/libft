@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/06 23:50:55 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/01/07 00:03:49 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/01/15 16:50:07 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 #include "libft.h"
 
-int ft_abs(int i)
+int	ft_abs(int i)
 {
 	if (i < 0)
 		return (i * -1);

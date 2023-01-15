@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 21:40:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/04 23:04:57 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/01/15 16:50:49 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@
 #include "../inc/colors.h"
 #include "../inc/ft_printf.h"
 
-int main(void)
+int	main(void)
 {
-
 	ft_printf(UWHITE "Regular Colors\n");
 	ft_printf(RED "This is RED\n");
 	ft_printf(GREEN "This is GREEN\n");
