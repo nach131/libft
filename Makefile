@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/01/06 23:58:05 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/01/25 19:31:24 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ PRINTF_PUT_DIR = printf/put/
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
-IS_FILES	= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint
+IS_FILES	= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_isprime
 
 LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem
