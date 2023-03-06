@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 20:48:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/23 20:51:01 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/06 18:35:59 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,23 @@
 
 #include "colors.h"
 #include "ft_printf.h"
+#include "error.h"
+#include "libft.h"
 
 void	ft_message(int err, char *msg)
 {
-	if (err == 0)
-		ft_printf(RED"%s", msg);
-	else if (err == 1)
+	char *str;
+	if (err == DANGER)
+	{
+		str = ft_strjoin(RED, msg);
+		write(2, str, ft_strlen(str));
+		free(str);
+	}
+	else if (err == WARNING)
 		ft_printf(YELLOW"%s", msg);
-	else if (err == 2)
+	else if (err == INFO)
 		ft_printf(BLUE"%s", msg);
-	else if (err == 3)
+	else if (err == SUCCESS)
 		ft_printf(GREEN"%s", msg);
 	ft_printf(WHITE"\n");
 }
