@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/01/25 19:37:19 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/07 16:49:21 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ char	*ft_itoa(int n);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_abs(int nb);
+long ft_atoi_long(const char *str);
 
 typedef struct s_list
 {

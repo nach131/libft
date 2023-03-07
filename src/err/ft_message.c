@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 20:48:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/03/06 18:35:59 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/07 17:31:58 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 
 void	ft_message(int err, char *msg)
 {
-	char *str;
+	char	*str;
+
 	if (err == DANGER)
 	{
 		str = ft_strjoin(RED, msg);

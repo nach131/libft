@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/01/25 19:31:24 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/03/07 16:49:03 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ STR_FILES = ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
 			ft_strlcpy ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr \
 			ft_strtrim ft_substr ft_cp_dptr
 
-TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper ft_abs
+TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper ft_abs ft_atoi_long
 
 GET_FILES = get_next_line
 
@@ -116,7 +116,7 @@ clean :
 
 fclean : clean
 			@$(RM) -f $(NAME)
-			@echo "$(BLUE) Todo Super limpito...✌🏼$(WHITE)"
+			@echo "$(GREEN) Todo Super limpito...✌🏼$(WHITE)"
 
 re: fclean all
 			@echo "$(YELLOW) Borrado todo y recompilado...✌🏼$(WHITE)"

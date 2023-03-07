@@ -1,55 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atoi_long.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/30 11:46:28 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/03/06 23:51:48 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/03/07 16:40:05 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/03/07 17:31:27 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-//	convert a string to an integer
+//	convert a string to an long
 
-#include "libft.h"
-
-int	ft_atoi(const char *str)
+long	ft_atoi_long(const char *str)
 {
-	int	i;
-	int	menos;
-	int	numero;
+	int		i;
+	int		neg;
+	long	res;
 
 	i = 0;
-	menos = 1;
-	numero = 0;
+	neg = 1;
+	res = 0;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
 		i++;
 	if (str[i] == '-')
 	{
-		menos = -1;
+		neg = -1;
 		i++;
 	}
 	else if (str[i] == '+')
 		i++;
-	while (str[i] >= '0' && str[i] <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		numero = numero * 10 + (str[i] - 48);
+		res *= 10;
+		res += str[i] - '0';
 		i++;
 	}
-	return (menos * numero);
+	return (res * neg);
 }
+
+// // -9223372036854775808
+// // 9223372036854775807
+// #include <stdio.h>
+// #include <limits.h>
 
 // int main(void)
 // {
-// 	int numero;
-// 	char string[20] = "+42 Barcelona";
-// 	//	char	string[20] = "--123";
-//
-// 	numero = ft_atoi(string);
-// 	printf("\nnumero: %d\n", numero);
+// 	long numero;
+// 	// char string[] = "9223372036854775807";
+// 	char string[] = "-9223372036854775808";
+
+// 	numero = ft_atoi_long(string);
+// 	printf("\nnumero: %ld\n", numero);
 // }
 // // numero: 42
