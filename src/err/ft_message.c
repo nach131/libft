@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 20:48:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/03/11 11:16:00 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/16 13:28:13 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_message(int err, char *msg)
 	else if (err == WARNING)
 		ft_printf(YELLOW"%s", msg);
 	else if (err == INFO)
-		ft_printf(BLUE"%s", msg);
+		ft_printf(CYAN "%s", msg);
 	else if (err == SUCCESS)
 		ft_printf(GREEN"%s", msg);
 	ft_printf(WHITE"\n");
