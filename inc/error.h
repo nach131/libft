@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 21:01:35 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/30 19:19:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/23 16:29:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ typedef enum e_bool
 {
 	FALSE,
 	TRUE,
-}	t_bool;
+}		t_bool;
 
 #endif
 

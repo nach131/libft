@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:37:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/12/04 23:13:42 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/23 16:29:09 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 // # Regular Colors
 
 # define RED "\033[0;31m"
-# define GREEN	"\033[0;32m"
-# define YELLOW	"\033[0;33m"
-# define BLUE	"\033[0;34m"
-# define MAGENTA	"\033[0;35m"
-# define CYAN	"\033[0;36m"
-# define WHITE	"\033[0;37m"
+# define GREEN "\033[0;32m"
+# define YELLOW "\033[0;33m"
+# define BLUE "\033[0;34m"
+# define MAGENTA "\033[0;35m"
+# define CYAN "\033[0;36m"
+# define WHITE "\033[0;37m"
 # define ORANGE "\033[1;31m"
 # define BLACK "\x1B[30m"
 

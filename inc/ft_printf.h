@@ -6,23 +6,23 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 19:37:55 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/07/20 17:53:39 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/03/23 16:29:17 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
 # include <stdarg.h>
+# include <stdio.h>
 # include <unistd.h>
 
 typedef struct s_print
 {
-	int	len;
-	int	widht;
-	int	error;
-}	t_print;
+	int		len;
+	int		widht;
+	int		error;
+}			t_print;
 
 int			ft_printf(const char *format, ...);
 const char	*ft_search_arg(va_list arg, const char *format, t_print *sc);
