@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/03/07 16:49:03 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/04/23 17:53:26 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,16 +99,16 @@ DEPS = $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
 
 # ═══ RULES ══════════════════════════════════════════════════════════════════#
 
+$(OBJ_DIR)%.o : $(SRC_DIR)%.c Makefile
+			@$(MKDIR) $(dir $@)
+			@echo "$(ORANGE) Compilando  ➟  $(BLUE)$< $(WHITE)"
+			@$(CC) $(CFLAGS) -I$(INCLUDES) -MMD -MP -c $< -o $@
+
 all: $(NAME)
 
 $(NAME) : $(OBJS)
 			@$(AR) $(NAME) $(OBJS)
 			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
-
-$(OBJ_DIR)%.o : $(SRC_DIR)%.c
-			@$(MKDIR) $(dir $@)
-			@echo "$(ORANGE) Compilando  ➟  $(BLUE)$< $(WHITE)"
-			@$(CC) $(CFLAGS) -I$(INCLUDES) -MMD -MP -c $< -o $@
 
 clean : 
 			@$(RM) -rf $(OBJ_DIR)
