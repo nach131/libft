@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/04/23 17:53:26 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/05/07 20:18:49 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -111,15 +111,15 @@ $(NAME) : $(OBJS)
 			@echo "$(GREEN)\n ✓ Creado $(NAME)\n$(WHITE)"
 
 clean : 
-			@$(RM) -rf $(OBJ_DIR)
+			@$(RM) -rf $(OBJ_DIR) $(NAME)
 			@echo "$(RED)\n ✗ Archivos objetos libft borrados.‼️\n$(WHITE)";
 
 fclean : clean
 			@$(RM) -f $(NAME)
-			@echo "$(GREEN) Todo Super limpito...✌🏼$(WHITE)"
+			@echo "$(GREEN) Toda libreria libft limpita...🤟🏼$(WHITE)"
 
 re: fclean all
-			@echo "$(YELLOW) Borrado todo y recompilado...✌🏼$(WHITE)"
+			@echo "$(YELLOW) Borrado todo y recompilado...🤟🏼$(WHITE)"
 
 norm:
 			@norminette $(SRCS) $(INCLUDES) | grep -v Norme -B1 || true
