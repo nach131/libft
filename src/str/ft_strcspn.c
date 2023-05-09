@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcspn.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/09 11:25:24 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/05/09 11:24:29 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/05/09 11:25:23 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
-/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// La función strlen() toma una cadena como argumento y devuelve su longitud.
-// El valor devuelto es de tipo size_t (el tipo entero sin signo).
+
+// busca el primer carácter de la segunda cadena que aparece en la primera
+//  cadena y devuelve la posición del carácter en la cadena de entrada.
+//  Si la cadena de entrada no contiene ninguno de los caracteres de
+//   la segunda cadena, devuelve la longitud completa de la cadena de entrada.
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+size_t	ft_strcspn(const char *s, const char *reject)
 {
-	size_t	i;
+	int i = 0;
+	int j = 0;
 
-	i = -1;
-	while (s[++i])
-		;
-	return (i);
+	while (reject[i])
+	{
+		while (s[j])
+		{
+			if (s[j] == reject[i])
+				return (j);
+			j++;
+		}
+		i++;
+	}
+	return (j);
 }
-
-// int	main(void)
-// {
-// 	char str[] = "42Barcelona";
-//
-// 	printf("'%s' tiene %d caracteres\n", str, ft_strlen(str));
-// }
-
-// '42Barcelona' tiene 11 caracteres

@@ -1,38 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/09 11:25:24 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/05/09 10:25:30 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/05/09 10:32:58 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
-/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// La función strlen() toma una cadena como argumento y devuelve su longitud.
-// El valor devuelto es de tipo size_t (el tipo entero sin signo).
+
+// La función strcmp() en C se utiliza para comparar dos cadenas de caracteres.
+// La función devuelve un valor entero que indica si las cadenas son iguales o no.
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+int	ft_strcmp(char *s1, char *s2)
 {
-	size_t	i;
+	int	i;
 
-	i = -1;
-	while (s[++i])
-		;
-	return (i);
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
 
 // int	main(void)
 // {
-// 	char str[] = "42Barcelona";
-//
-// 	printf("'%s' tiene %d caracteres\n", str, ft_strlen(str));
-// }
 
-// '42Barcelona' tiene 11 caracteres
+// 	char s[] = "ABABC";
+// 	char a[] = "ACB";
+
+// 	printf("mio: %d\n", ft_strcmp(a,b));
+// 	printf("original: %d\n", strcmp(a,b));
+
+// }

@@ -1,38 +1,56 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 15:06:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/09 11:25:24 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/05/09 11:32:27 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/05/09 11:33:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
-/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// La función strlen() toma una cadena como argumento y devuelve su longitud.
-// El valor devuelto es de tipo size_t (el tipo entero sin signo).
+
+// invierte la cadena de caracteres dada como entrada. Es decir,
+// cambia el orden de los caracteres de la cadena original para que el último
+// carácter de la cadena original se convierta en el primer carácter de la cadena
+// invertida y el primer carácter de la cadena original se convierta en
+// el último carácter de la cadena invertida. La función no devuelve nada,
+// ya que modifica directamente la cadena de entrada.
 
 #include "libft.h"
 
-int	ft_strlen(const char *s)
+char	*ft_strrev(char *str)
 {
-	size_t	i;
+	int		len;
+	int		i;
+	char	tmp;
 
-	i = -1;
-	while (s[++i])
-		;
-	return (i);
+	len = 0;
+	i = 0;
+	tmp = 0;
+	while (str[len])
+		len++;
+	len--;
+	while (i < len)
+	{
+		tmp = str[len];
+		str[len] = str[i];
+		str[i] = tmp;
+		i++;
+		len--;
+	}
+	return (str);
 }
 
-// int	main(void)
+// #include <stdio.h>
+// int main(void)
 // {
-// 	char str[] = "42Barcelona";
-//
-// 	printf("'%s' tiene %d caracteres\n", str, ft_strlen(str));
+// 	char s[] = "Hello World";
+// 	ft_strrev(s);
+// 	printf("%s\n", s);
+// 	return (0);
 // }
-
-// '42Barcelona' tiene 11 caracteres
