@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:32:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/09 11:33:52 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/09 12:14:08 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,16 @@ char	*ft_strrev(char *str)
 // 	char s[] = "Hello World";
 // 	ft_strrev(s);
 // 	printf("%s\n", s);
+// 	return (0);
+// }
+
+// int	main(void)
+// {
+// 	char	*s;
+
+// 	s = malloc(14 * sizeof(char));
+// 	s = ft_strdup("42 Barcelona");
+// 	ft_strrev(s);
+// 	ft_printf("%s\n", s);
 // 	return (0);
 // }
