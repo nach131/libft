@@ -4,8 +4,6 @@
 	libft_plus
 </h1>
  <p align="center">
-<img alt="total-views" src="https://img.shields.io/badge/views-89-blue">
-<img alt="total-clone" src="https://img.shields.io/badge/clone-20-blue">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/nach131/minitalk">
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/nach131/libft_plus">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nach131/libft_plus">
