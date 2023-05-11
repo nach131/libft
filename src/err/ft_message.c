@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 20:48:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/03/16 13:28:13 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/11 12:11:51 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "colors.h"
-#include "ft_printf.h"
+#include "colorsft.h"
 #include "error.h"
+#include "ft_printf.h"
 #include "libft.h"
 
 void	ft_message(int err, char *msg)
@@ -30,10 +30,10 @@ void	ft_message(int err, char *msg)
 		free(str);
 	}
 	else if (err == WARNING)
-		ft_printf(YELLOW"%s", msg);
+		ft_printf(YELLOW "%s", msg);
 	else if (err == INFO)
 		ft_printf(CYAN "%s", msg);
 	else if (err == SUCCESS)
-		ft_printf(GREEN"%s", msg);
-	ft_printf(WHITE"\n");
+		ft_printf(GREEN "%s", msg);
+	ft_printf(WHITE "\n");
 }

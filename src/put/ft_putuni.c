@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/23 20:39:01 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/23 22:26:51 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/11 12:11:44 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "colors.h"
+#include "colorsft.h"
 #include "ft_printf.h"
 
 void	ft_putuni(int n, char *str, char *color)
@@ -28,7 +28,7 @@ void	ft_putuni(int n, char *str, char *color)
 		ft_printf("%s", str);
 		i++;
 	}
-	ft_printf(WHITE"\n");
+	ft_printf(WHITE "\n");
 }
 
 // int main()

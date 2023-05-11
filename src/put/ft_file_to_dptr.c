@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 11:29:05 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/01/04 17:46:36 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/11 12:11:33 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@
 // #1. El path incluido el nombre del fichero a procesar.
 // #2. Opción 1 se incluira el salto de linea \n, 0 se quitara el salto.
 
-#include <fcntl.h>
-#include "libft.h"
+#include "colorsft.h"
 #include "error.h"
-#include "colors.h"
-#include "get_next_line.h"
 #include "ft_printf.h"
+#include "get_next_line.h"
+#include "libft.h"
+#include <fcntl.h>
 
 #define MSG_DAN_0 "File not found"
 #define MSG_DAN_1 "File is empty"
@@ -35,9 +35,10 @@ int			g_line;
 
 void static	is_line(char *line, char **res, int control, int *write)
 {
-	int static	i = 0;
+	int static	i;
 	int			len;
 
+	i = 0;
 	if (control == FALSE)
 		g_rows += 1;
 	else
