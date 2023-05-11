@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/05/09 11:58:14 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/05/11 12:59:18 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,60 +25,60 @@ WHITE		=\033[0;37m
 
 # ═══ COMPILATE ══════════════════════════════════════════════════════════════════#
 
-CC			= gcc
-CFLAGS	= -Wall -Wextra -Werror -g3
-AR 			= ar -rcs
-RM			= rm -f
-MKDIR		= -mkdir -p
+CC			:= gcc
+CFLAGS	:= -Wall -Wextra -Werror -g3
+AR 			:= ar -rcs
+RM			:= rm -f
+MKDIR		:= -mkdir -p
 
 # ═══ DIRECTORIES ═════════════════════════════════════════════════════════════#
 
-INCLUDES = inc/
-SRC_DIR = src/
-OBJ_DIR = obj/
+INCLUDES := inc/
+SRC_DIR := src/
+OBJ_DIR := obj/
 
-IS_DIR = is/
-LST_DIR = lst/
-MEM_DIR = mem/
-PUT_DIR = put/
-STR_DIR = str/
-TO_DIR = to/
-GET_DIR = get/
-ERR_DIR = err/
-PRINTF_DIR = printf/
-PRINTF_PRINT_DIR = printf/print/
-PRINTF_PUT_DIR = printf/put/
+IS_DIR := is/
+LST_DIR := lst/
+MEM_DIR := mem/
+PUT_DIR := put/
+STR_DIR := str/
+TO_DIR := to/
+GET_DIR := get/
+ERR_DIR := err/
+PRINTF_DIR := printf/
+PRINTF_PRINT_DIR := printf/print/
+PRINTF_PUT_DIR := printf/put/
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
-IS_FILES	= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_isprime
+IS_FILES	:= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_isprime
 
-LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
+LST_FILES := ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem
 
-MEM_FILES = ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
+MEM_FILES := ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
 			ft_memset ft_free_dptr
 
-PUT_FILES = ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_putuni \
+PUT_FILES := ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_putuni \
 			ft_file_to_dptr
 
-STR_FILES = ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
+STR_FILES := ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
 			ft_strlcpy ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr \
 			ft_strtrim ft_substr ft_cp_dptr ft_strcmp ft_strcspn ft_strpbrk \
 			ft_strrev ft_strspn
 
-TO_FILES = ft_atoi ft_itoa ft_tolower ft_toupper ft_abs ft_atoi_long
+TO_FILES := ft_atoi ft_itoa ft_tolower ft_toupper ft_abs ft_atoi_long
 
-GET_FILES = get_next_line
+GET_FILES := get_next_line
 
-ERR_FILES = ft_message
+ERR_FILES := ft_message
 
-PRINTF_FILES = ft_printf ft_search_arg ft_read_text
+PRINTF_FILES := ft_printf ft_search_arg ft_read_text
 
-PRINTF_PRINT_FILES = ft_print_str ft_print_char ft_print_dec ft_print_unsint \
+PRINTF_PRINT_FILES := ft_print_str ft_print_char ft_print_dec ft_print_unsint \
 					 ft_print_ptr ft_print_hex
 				
-PRINTF_PUT_FILES = ft_putstr ft_write
+PRINTF_PUT_FILES := ft_putstr ft_write
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
@@ -94,9 +94,9 @@ SRC_FILES+=$(addprefix $(PRINTF_DIR),$(PRINTF_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PRINT_DIR),$(PRINTF_PRINT_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PUT_DIR),$(PRINTF_PUT_FILES))
 
-SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
-OBJS = $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
-DEPS = $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
+SRCS := $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
+OBJS := $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
+DEPS := $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
 
 # ═══ RULES ══════════════════════════════════════════════════════════════════#
 
