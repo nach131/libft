@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strspn.c                                        :+:      :+:    :+:   */
+/*   ft_lstfind.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/09 11:35:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 12:18:17 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/05/19 11:39:37 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/05/19 11:55:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,46 +14,22 @@
 /* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-//  busca cuántos caracteres consecutivos de la cadena de entrada se
-//  encuentran en el conjunto especificado.
-
-// La función toma dos argumentos: un puntero a la cadena de entrada y un
-// puntero a una cadena de caracteres que especifica el conjunto de caracteres
-// permitidos. La función devuelve el número de caracteres consecutivos en
-// la cadena de entrada que están presentes en el conjunto especificado.
+// Busca un valor en una lista, si le pasamos ft_strcmp son iguales ok
+// si la lista son int hay que hacer una funcicion que reste los valores y el
+// resultado es 0 son iguales
 
 #include "libft.h"
 
-size_t	ft_strspn(const char *s, const char *accept)
+t_list	*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *, char *))
 {
-	const char	*t_s;
-	const char	*t_a;
+	t_list	*curr;
 
-	t_s = s;
-	while (*t_s)
+	curr = lst;
+	while (curr)
 	{
-		t_a = accept;
-		while (1)
-		{
-			if (*t_s == *t_a)
-				break ;
-			else if (*t_a++ == '\0')
-				return (t_s - s);
-		}
-		t_s++;
+		if ((*cmp)(curr->content, data_ref) == 0)
+			break ;
+		curr = curr->next;
 	}
-	return (t_s - s);
+	return (curr);
 }
-
-// #include <string.h>
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char s[] = "ABABC";
-// 	char a[] = "ACB";
-
-// 	printf("ori: %lu \n", strspn(s, a));
-// 	printf("mio: %lu \n", ft_strspn(s, a));
-// 	return(0);
-// }

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/01/18 19:55:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/19 12:05:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 // devuelve un doble punterto de char.
 
 #include "libft.h"
+
 // #include "../../inc/libft.h"
 // #include "../../inc/ft_printf.h"
 // #include "../../inc/colors.h"
@@ -43,7 +44,7 @@ char	**ft_cp_dptr(char **ori)
 	return (res);
 }
 
-//int main(voivd)
+//int main(void)
 //{
 //	char **str;
 //	str = ft_file_to_dptr("ft_strjoin.c", 0);

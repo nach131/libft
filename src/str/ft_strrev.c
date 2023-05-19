@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:32:27 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/09 12:14:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/19 12:21:38 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 
 // invierte la cadena de caracteres dada como entrada. Es decir,
 // cambia el orden de los caracteres de la cadena original para que el último
-// carácter de la cadena original se convierta en el primer carácter de la cadena
+// carácter de la cadena original se convierta en el primer carácter
+//  de la cadena
 // invertida y el primer carácter de la cadena original se convierta en
 // el último carácter de la cadena invertida. La función no devuelve nada,
 // ya que modifica directamente la cadena de entrada.
