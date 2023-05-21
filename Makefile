@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/05/19 11:43:55 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/05/21 13:50:57 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -103,7 +103,9 @@ DEPS := $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
 
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c Makefile
 			@$(MKDIR) $(dir $@)
-			@echo "$(ORANGE) Compilando  ➟  $(BLUE)$< $(WHITE)"
+			@clear
+			@echo "$(ORANGE) Compilando libft  ➟  $(BLUE)[$<]$(WHITE)"
+#			@echo "$(ORANGE) Compilando  ➟  $(BLUE)$< $(WHITE)"
 			@$(CC) $(CFLAGS) -I$(INCLUDES) -MMD -MP -c $< -o $@
 
 all: $(NAME)
