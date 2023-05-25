@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 11:55:51 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/25 13:56:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int					ft_isascii(int c);
 int					ft_isdigit(int c);
 int					ft_isprint(int c);
 int					ft_isprime(int n);
+int					ft_isnumber(const char *str);
 
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t count, size_t size);

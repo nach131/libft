@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/05/21 14:07:34 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/05/25 14:04:34 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ ORANGE	=\033[38;5;214m
 RED			=\033[0;31m
 YELLOW	=\033[0;33m
 WHITE		=\033[0;37m
+BCYAN		=\033[1;36m
 
 # ═══ COMPILATE ══════════════════════════════════════════════════════════════════#
 
@@ -51,7 +52,8 @@ PRINTF_PUT_DIR := printf/put/
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
-IS_FILES	:= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint ft_isprime
+IS_FILES	:= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
+			ft_isprime ft_isnumber
 
 LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem ft_lstprint \
@@ -104,7 +106,7 @@ DEPS := $(addprefix $(OBJ_DIR), $(addsuffix .d, $(SRC_FILES)))
 $(OBJ_DIR)%.o : $(SRC_DIR)%.c Makefile
 			@$(MKDIR) $(dir $@)
 			@clear
-			@echo "$(ORANGE) Compilando libft  ➟  $(BLUE)[$<]$(WHITE)"
+			@echo "$(ORANGE) Compilando libft  ➟  $(BCYAN)[$<]$(WHITE)"
 			@$(CC) $(CFLAGS) -I$(INCLUDES) -MMD -MP -c $< -o $@
 
 all: $(NAME)
