@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/05/25 14:04:34 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/05/26 11:37:45 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,7 +68,7 @@ PUT_FILES := ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_putuni \
 STR_FILES := ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat \
 			ft_strlcpy ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr \
 			ft_strtrim ft_substr ft_cp_dptr ft_strcmp ft_strcspn ft_strpbrk \
-			ft_strrev ft_strspn
+			ft_strrev ft_strspn ft_strcpy
 
 TO_FILES := ft_atoi ft_itoa ft_tolower ft_toupper ft_abs ft_atoi_long
 
