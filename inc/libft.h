@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/26 11:40:44 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/26 13:36:08 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ size_t				ft_strcspn(const char *s, const char *reject);
 char				*ft_strpbrk(const char *s1, const char *s2);
 char				*ft_strrev(char *str);
 size_t				ft_strspn(const char *s, const char *accept);
-char *ft_strcpy(char *s1, char *s2);
+char				*ft_strcpy(char *s1, char *s2);
 
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
@@ -92,5 +92,6 @@ void				ft_lstdelitem(void *tmp);
 void				ft_lstprint(t_list *lst);
 t_list				*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *,
 							char *));
+void				ft_lstreverse(t_list *begin_list);
 
 #endif
