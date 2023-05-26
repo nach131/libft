@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 10:25:30 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 12:18:48 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/26 09:29:56 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,87 @@ int	ft_strcmp(char *s1, char *s2)
 // }
 
 // valor: 0
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+// 	char cadena[] = "env | grep PATH";
+// 	char subcadena[] = "|";
+// 	// char cadena[] = "La casa es grande";
+// 	// char subcadena[] = "casa";
+
+// 	if (strstr(cadena, subcadena) != NULL)
+// 		printf("La subcadena se encuentra en la cadena.\n");
+// 	else
+// 		printf("La subcadena no se encuentra en la cadena.\n");
+
+// 	return 0;
+// }
+//=========================Ordena Alfabeticamente======================================
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+// 	char palabras[][20] = {"Manzana", "Platano", "Cereza", "Melocotóns"};
+// 	int i = -1;
+// 	int j;
+// 	int num_palabras = sizeof(palabras) / sizeof(palabras[0]);
+
+// 	while (++i < num_palabras)
+// 	{
+// 		j = -1;
+// 		while (++j < num_palabras)
+// 		{
+// 			if (strcmp(palabras[i], palabras[j]) > 0)
+// 			{
+// 				char temp[20];
+// 				strcpy(temp, palabras[i]);
+// 				strcpy(palabras[i], palabras[j]);
+// 				strcpy(palabras[j], temp);
+// 			}
+// 		}
+// 	}
+
+// 	printf("Palabras ordenadas:\n");
+// 	i = -1;
+// 	while (++i < num_palabras)
+// 		printf("%s\n", palabras[i]);
+
+// 	return 0;
+// }
+//=====================Ordena según ASCII========================================
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+// 	char palabras[][20] = {"Apple_PubSub", "USER", "SHELL", "CLICOLOR"};
+// 	int i = -1;
+// 	int j;
+// 	int num_palabras = sizeof(palabras) / sizeof(palabras[0]);
+
+// 	for (i = 0; i < num_palabras - 1; i++)
+// 	{
+// 		for (j = i + 1; j < num_palabras; j++)
+// 		{
+// 			if (strcmp(palabras[i], palabras[j]) > 0)
+// 			{
+// 				char temp[20];
+// 				strcpy(temp, palabras[i]);
+// 				strcpy(palabras[i], palabras[j]);
+// 				strcpy(palabras[j], temp);
+// 			}
+// 		}
+// 	}
+
+// 	printf("Palabras ordenadas:\n");
+// 	for (i = 0; i < num_palabras; i++)
+// 	{
+// 		printf("%s\n", palabras[i]);
+// 	}
+
+// 	return 0;
+// }
