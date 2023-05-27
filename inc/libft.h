@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/26 13:36:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/27 12:43:54 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ char				*ft_strpbrk(const char *s1, const char *s2);
 char				*ft_strrev(char *str);
 size_t				ft_strspn(const char *s, const char *accept);
 char				*ft_strcpy(char *s1, char *s2);
+char				*ft_strtok(char *str, const char *delim);
 
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);

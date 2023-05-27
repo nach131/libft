@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:29:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 12:20:08 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/27 12:40:44 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,22 @@
 
 #include "libft.h"
 
-char	*ft_strpbrk(const char *s1, const char *s2)
+char *ft_strpbrk(const char *str, const char *charset)
 {
-	int	i;
+	const char *char_ptr;
 
-	while (s1)
+	while (*str != '\0')
 	{
-		i = 0;
-		while (s2[i])
+		char_ptr = charset;
+		while (*char_ptr != '\0')
 		{
-			if (*s1 == s2[i])
-				return ((char *)s1);
-			i++;
+			if (*char_ptr == *str)
+				return ((char *)str);
+			char_ptr++;
 		}
-		s1++;
+		str++;
 	}
-	return (0);
+	return (NULL);
 }
 
 // #include <string.h>
