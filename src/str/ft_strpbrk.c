@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 11:29:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/27 12:40:44 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/27 14:33:36 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 /* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// busca el primer carácter de la primera cadena que aparece en la segunda
+// Busca el primer carácter de la primera cadena que aparece en la segunda
 // cadena y devuelve un puntero a la posición de ese carácter
 // en la segunda cadena.
 
@@ -26,9 +26,9 @@
 
 #include "libft.h"
 
-char *ft_strpbrk(const char *str, const char *charset)
+char	*ft_strpbrk(const char *str, const char *charset)
 {
-	const char *char_ptr;
+	const char	*char_ptr;
 
 	while (*str != '\0')
 	{

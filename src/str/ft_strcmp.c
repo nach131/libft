@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 10:25:30 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/26 09:29:56 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/05/27 14:31:35 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,9 @@ int	ft_strcmp(char *s1, char *s2)
 // 	else
 // 		printf("La subcadena no se encuentra en la cadena.\n");
 
-// 	return 0;
+// 	return (0);
 // }
-//=========================Ordena Alfabeticamente======================================
+//=======================Ordena Alfabeticamente========================
 // #include <stdio.h>
 // #include <string.h>
 
@@ -88,9 +88,9 @@ int	ft_strcmp(char *s1, char *s2)
 // 	while (++i < num_palabras)
 // 		printf("%s\n", palabras[i]);
 
-// 	return 0;
+// 	return (0);
 // }
-//=====================Ordena según ASCII========================================
+//=============Ordena según ASCII====================================
 // #include <stdio.h>
 // #include <string.h>
 
@@ -121,5 +121,5 @@ int	ft_strcmp(char *s1, char *s2)
 // 		printf("%s\n", palabras[i]);
 // 	}
 
-// 	return 0;
+// 	return (0);
 // }
