@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 23:15:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/29 23:18:40 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/04 19:00:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,19 @@
 
 void	ft_lstfree(t_list *lst)
 {
-	if (lst)
+	t_list *tmp;
+
+	while (lst != NULL)
 	{
-		while (lst != NULL)
-		{
-			free(lst);
-			lst = lst->next;
-		}
+		tmp = lst;
+		lst = lst->next;
+		if (tmp->content)
+			free(tmp->content);
+		free(tmp);
 	}
 }
 
-// void	print_lst(t_list *lst)
+// void print_lst(t_list *lst)
 // {
 // 	if (lst)
 // 	{
@@ -42,18 +44,18 @@ void	ft_lstfree(t_list *lst)
 // 	}
 // }
 
-// int	main(void)
+// int main(void)
 // {
-// 	t_list	*list;
+// 	t_list *list;
 
 // 	list = (t_list *)malloc(sizeof(t_list));
-// 	list->content = "42 Barcelona";
+// 	list->content = ft_strdup("42 Barcelona");
 // 	list->next = (t_list *)malloc(sizeof(t_list));
-// 	list->next->content = "42 Madrid";
+// 	list->next->content = ft_strdup("42 Madrid");
 // 	list->next->next = (t_list *)malloc(sizeof(t_list));
-// 	list->next->next->content = "42 Malaga";
+// 	list->next->next->content = ft_strdup("42 Malaga");
 // 	list->next->next->next = (t_list *)malloc(sizeof(t_list));
-// 	list->next->next->next->content = "42 Paris";
+// 	list->next->next->next->content = ft_strdup("42 Paris");
 // 	list->next->next->next->next = NULL;
 // 	print_lst(list);
 // 	ft_lstfree(list);

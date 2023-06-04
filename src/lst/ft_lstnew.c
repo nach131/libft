@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 20:06:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/21 19:01:23 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/04 19:00:48 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ t_list	*ft_lstnew(void *content)
 	new = (t_list *)malloc(sizeof(t_list) * 1);
 	if (!new)
 		return (NULL);
-	new->content = content;
+	// new->content = content;
+	new->content = ft_strdup(content);
 	new->next = NULL;
 	return (new);
 }
