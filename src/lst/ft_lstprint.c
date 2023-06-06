@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 10:46:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 10:58:38 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/04 19:34:55 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 /* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
+#include "colorsft.h"
 #include "libft.h"
 
 void	ft_lstprint(t_list *lst)
@@ -23,7 +24,7 @@ void	ft_lstprint(t_list *lst)
 	tmp = lst;
 	while (tmp)
 	{
-		printf("%s\n", tmp->content);
+		printf(YELLOW "%s\n", tmp->content);
 		tmp = tmp->next;
 	}
 }
