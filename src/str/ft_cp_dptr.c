@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 09:14:26 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/19 12:05:19 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/06 13:13:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,27 +44,27 @@ char	**ft_cp_dptr(char **ori)
 	return (res);
 }
 
-//int main(void)
-//{
-//	char **str;
-//	str = ft_file_to_dptr("ft_strjoin.c", 0);
-//	char **res;
-//	res = ft_cp_dptr(str);
-//
-//	int i = 0;
-//	while (str[i])
-//	{
-//		ft_printf("%s\n", str[i]);
-//		i++;
-//	}
-//	i = 0;
-//	while (res[i])
-//	{
-//		ft_printf(GREEN "%s\n", res[i]);
-//		i++;
-//	}
-//	ft_printf("ori: %p\n", str);
-//	ft_printf("cp: %p\n", res);
-//	ft_free_dptr(str);
-//	ft_free_dptr(res);
-//}
+// int main(void)
+// {
+// 	char **str;
+// 	str = ft_file_to_dptr("ft_strjoin.c", 0);
+// 	char **res;
+// 	res = ft_cp_dptr(str);
+
+// 	int i = 0;
+// 	while (str[i])
+// 	{
+// 		ft_printf("%s\n", str[i]);
+// 		i++;
+// 	}
+// 	i = 0;
+// 	while (res[i])
+// 	{
+// 		ft_printf(GREEN "%s\n", res[i]);
+// 		i++;
+// 	}
+// 	ft_printf("ori: %p\n", str);
+// 	ft_printf("cp: %p\n", res);
+// 	ft_free_dptr(str);
+// 	ft_free_dptr(res);
+// }
