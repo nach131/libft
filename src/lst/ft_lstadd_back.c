@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 10:40:01 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/21 19:01:24 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/08 15:21:24 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 	else
 	{
-	l_aux = ft_lstlast(*lst);
-	l_aux->next = new;
+		l_aux = ft_lstlast(*lst);
+		l_aux->next = new;
 	}
 }
 

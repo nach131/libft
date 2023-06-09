@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 10:46:52 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/04 19:34:55 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/09 09:57:26 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ void	ft_lstprint(t_list *lst)
 	t_list	*tmp;
 
 	tmp = lst;
-	while (tmp)
+	while (tmp != NULL)
 	{
-		printf(YELLOW "%s\n", tmp->content);
+		printf(YELLOW "%s\n" WHITE, tmp->content);
 		tmp = tmp->next;
 	}
 }

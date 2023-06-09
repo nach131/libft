@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 23:15:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/06 10:44:01 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/08 16:33:00 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ void	ft_lstfree(t_list *lst)
 		tmp = lst;
 		lst = lst->next;
 		if (tmp->content)
+		{
 			free(tmp->content);
+			tmp->content = NULL;
+		}
 		free(tmp);
 	}
 }
