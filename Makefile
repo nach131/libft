@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/05/29 23:18:59 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/06/10 13:11:14 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,7 @@ IS_FILES	:= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
 
 LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem ft_lstprint \
-			ft_lstfind ft_lstreverse ft_lstfree
+			ft_lstfind ft_lstreverse ft_lstfree ft_lst_to_dptr
 
 MEM_FILES := ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
 			ft_memset ft_free_dptr
