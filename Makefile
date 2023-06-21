@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/06/10 13:11:14 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/06/21 20:23:04 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,7 @@ ERR_DIR := err/
 PRINTF_DIR := printf/
 PRINTF_PRINT_DIR := printf/print/
 PRINTF_PUT_DIR := printf/put/
+PRINT_DIR := print/
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
@@ -60,7 +61,7 @@ LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstfind ft_lstreverse ft_lstfree ft_lst_to_dptr
 
 MEM_FILES := ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
-			ft_memset ft_free_dptr
+			ft_memset ft_free_dptr ft_free_tptr
 
 PUT_FILES := ft_putchar_fd ft_putendl_fd ft_putnbr_fd ft_putstr_fd ft_putuni \
 			ft_file_to_dptr
@@ -83,6 +84,8 @@ PRINTF_PRINT_FILES := ft_print_str ft_print_char ft_print_dec ft_print_unsint \
 				
 PRINTF_PUT_FILES := ft_putstr ft_write
 
+PRINT_FILES := ft_print_dptr ft_print_tptr
+
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
 SRC_FILES+=$(addprefix $(IS_DIR),$(IS_FILES))
@@ -96,6 +99,7 @@ SRC_FILES+=$(addprefix $(ERR_DIR),$(ERR_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_DIR),$(PRINTF_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PRINT_DIR),$(PRINTF_PRINT_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PUT_DIR),$(PRINTF_PUT_FILES))
+SRC_FILES+=$(addprefix $(PRINT_DIR),$(PRINT_FILES))
 
 SRCS := $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS := $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))

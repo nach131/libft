@@ -1,64 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_dptr.c                                     :+:      :+:    :+:   */
+/*   ft_print_tptr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/14 09:36:50 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/21 20:10:36 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/06/21 19:31:28 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/06/21 20:09:22 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
-/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// libera la memoria alocada en un doble puntero de char
+// Imprime el contenido de un triple puntero ***arr
 
+#include "ft_printf.h"
 #include "libft.h"
 
-void	ft_free_dptr(char **arr)
+void	ft_print_tptr(char ***arr)
 {
 	int	i;
+	int	j;
 
+	i = 0;
 	if (arr == NULL)
 		return ;
-	i = 0;
 	while (arr[i] != NULL)
 	{
-		free(arr[i]);
-		arr[i] = NULL;
+		j = 0;
+		while (arr[i][j] != NULL)
+		{
+			ft_printf("arr[%d][%d]: %s\n", i, j, arr[i][j]);
+			j++;
+		}
 		i++;
 	}
-	free(arr);
-	arr = NULL;
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-
-// int	main(void)
-// {
-// 	char	**arr;
-
-// 	arr = malloc(3 * sizeof(char *));
-// 	arr[0] = ft_strdup("42");
-// 	arr[1] = ft_strdup("Barcelona");
-// 	arr[2] = ft_strdup("The best");
-// 	// Imprimir contenido antes de liberar
-// 	printf("Contenido antes de liberar:\n");
-// 	ft_print_dptr(arr);
-// 	// Liberar memoria
-// 	ft_free_dptr(arr);
-// 	// Imprimir contenido después de liberar
-// 	printf("Contenido después de liberar:\n");
-// 	ft_print_dptr(arr);
-// 	// No se debe acceder a 'arr' después de liberar la memoria
-// 	return (0);
-// }
-
-// 42
-// Barcelona
-// The best
-// Contenido después de liberar:

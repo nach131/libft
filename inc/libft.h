@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/21 12:20:12 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/21 20:18:49 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memset(void *str, int c, size_t n);
 void				ft_free_dptr(char **arr);
+void				ft_free_tptr(char ***arr);
 
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl_fd(char *s, int fd);
@@ -96,5 +97,8 @@ t_list				*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *,
 void				ft_lstreverse(t_list *begin_list);
 void				ft_lstfree(t_list *lst);
 char				**ft_lst_to_dptr(t_list **lst, int del);
+
+void				ft_print_dptr(char **arr);
+void				ft_print_tptr(char ***arr);
 
 #endif
