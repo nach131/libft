@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstfree.c                                       :+:      :+:    :+:   */
+/*   ft_lstfree_node.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/29 23:15:25 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/23 13:58:23 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/06/23 13:59:10 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/06/23 14:06:16 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,43 +14,30 @@
 /* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// Libera todos los nodos de una lista pasada por parametro
-// Y libera la lista
+// Libera el contenido de cada node de la lista y el nodo
+// dejando la lista para incurporar nuevos elementos
 
 #include "libft.h"
 
-void	ft_lstfree(t_list *lst)
+void	ft_lstfree_node(t_list **lst)
 {
+	t_list	*cur;
 	t_list	*tmp;
 
-	while (lst != NULL)
+	cur = *lst;
+	while (cur != NULL)
 	{
-		tmp = lst;
-		lst = lst->next;
-		if (tmp->content)
-		{
-			free(tmp->content);
-			tmp->content = NULL;
-		}
-		free(tmp);
+		tmp = cur->next;
+		free(cur->content);
+		free(cur);
+		cur = tmp;
 	}
+	*lst = NULL;
 }
 
-// void print_lst(t_list *lst)
+// int	main(void)
 // {
-// 	if (lst)
-// 	{
-// 		while (lst != NULL)
-// 		{
-// 			printf("%s\n", lst->content);
-// 			lst = lst->next;
-// 		}
-// 	}
-// }
-
-// int main(void)
-// {
-// 	t_list *list;
+// 	t_list	*list;
 
 // 	list = (t_list *)malloc(sizeof(t_list));
 // 	list->content = ft_strdup("42 Barcelona");
@@ -61,7 +48,18 @@ void	ft_lstfree(t_list *lst)
 // 	list->next->next->next = (t_list *)malloc(sizeof(t_list));
 // 	list->next->next->next->content = ft_strdup("42 Paris");
 // 	list->next->next->next->next = NULL;
-// 	print_lst(list);
-// 	ft_lstfree(list);
+// 	ft_lstprint(list);
+// 	ft_lstfree_node(&list);
+// 	printf("Ahora asignado otros valores\n");
+// 	list = (t_list *)malloc(sizeof(t_list));
+// 	list->content = ft_strdup("42 Tokio");
+// 	list->next = (t_list *)malloc(sizeof(t_list));
+// 	list->next->content = ft_strdup("42 Moon");
+// 	list->next->next = (t_list *)malloc(sizeof(t_list));
+// 	list->next->next->content = ft_strdup("42 Marts");
+// 	list->next->next->next = (t_list *)malloc(sizeof(t_list));
+// 	list->next->next->next->content = ft_strdup("42 New York");
+// 	list->next->next->next->next = NULL;
+// 	ft_lstprint(list);
 // 	return (0);
 // }

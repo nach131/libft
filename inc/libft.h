@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/21 20:18:49 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/06/23 14:06:50 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,7 @@ t_list				*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *,
 void				ft_lstreverse(t_list *begin_list);
 void				ft_lstfree(t_list *lst);
 char				**ft_lst_to_dptr(t_list **lst, int del);
+void				ft_lstfree_node(t_list **lst);
 
 void				ft_print_dptr(char **arr);
 void				ft_print_tptr(char ***arr);
