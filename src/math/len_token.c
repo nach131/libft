@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstfind.c                                       :+:      :+:    :+:   */
+/*   len_token.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/19 11:39:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/07/20 23:57:07 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/07/21 12:22:09 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/07/21 12:43:28 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,41 +14,39 @@
 /* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-// Busca un valor en una lista, si le pasamos ft_strcmp son iguales ok
-// si la lista son int hay que hacer una funcicion que reste los valores y el
-// resultado es 0 son iguales
-
 #include "libft.h"
 
-t_list	*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *, char *))
-{
-	t_list	*curr;
+// Cuenta cuantos elementos separados por el token en un string
 
-	curr = lst;
-	while (curr)
+int	len_token(char *str, char *token)
+{
+	int	i;
+
+	i = 0;
+	while (str != NULL)
 	{
-		if ((*cmp)(curr->content, data_ref) == 0)
-			break ;
-		curr = curr->next;
+		i++;
+		str = ft_strtok(NULL, token);
 	}
-	return (curr);
+	return (i);
 }
 
-// int	find_env(char *s1, char *s2)
+// int main(void)
 // {
-// 	int	i;
+// 	int num_item;
+// 	char *path_copy;
+// 	char *token;
 
-// 	i = 0;
-// 	while (s2[i])
-// 	{
-// 		if (s1[i] == s2[i])
-// 			i++;
-// 		else
-// 			return (1);
-// 	}
-// 	if (s1[i] == '=')
-// 		return (0);
-// 	return (1);
+// 	char *path = "/Library/Frameworks/Python.framework/Versions/3.10/bin:/
+// Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/
+// usr/bin:/bin:/
+// usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/
+// opt/X11/bin:/usr/local/mongodb/bin";
+
+// 	path_copy = ft_strdup(path);
+// 	token = ft_strtok(path_copy, ":");
+// 	num_item = len_token(token, ":");
+// 	printf("num_item: %d\n", num_item);
 // }
 
-// 	tmp = ft_lstfind(env, "PATH", find_env);
+// num_item: 10

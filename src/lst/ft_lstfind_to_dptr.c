@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstfind.c                                       :+:      :+:    :+:   */
+/*   ft_lstfind_to_dptr.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 11:39:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/07/20 23:57:07 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/07/21 10:01:52 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@
 // Busca un valor en una lista, si le pasamos ft_strcmp son iguales ok
 // si la lista son int hay que hacer una funcicion que reste los valores y el
 // resultado es 0 son iguales
+// devuelve el valor encontrado.
 
 #include "libft.h"
 
-t_list	*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *, char *))
+char	*ft_lstfind_to_dptr(t_list *lst, void *data_ref, int (*cmp)(char *,
+			char *))
 {
 	t_list	*curr;
 
@@ -31,7 +33,7 @@ t_list	*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *, char *))
 			break ;
 		curr = curr->next;
 	}
-	return (curr);
+	return (curr->content);
 }
 
 // int	find_env(char *s1, char *s2)

@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/06/23 14:06:31 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/07/21 12:27:21 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ PRINTF_DIR := printf/
 PRINTF_PRINT_DIR := printf/print/
 PRINTF_PUT_DIR := printf/put/
 PRINT_DIR := print/
+MATH_DIR := math/
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
@@ -58,7 +59,8 @@ IS_FILES	:= ft_isalpha ft_isdigit ft_isalnum ft_isascii ft_isprint \
 
 LST_FILES = ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast	ft_lstadd_back \
 			ft_lstdelone ft_lstclear ft_lstiter ft_lstmap ft_lstdelitem ft_lstprint \
-			ft_lstfind ft_lstreverse ft_lstfree ft_lst_to_dptr ft_lstfree_node
+			ft_lstfind ft_lstreverse ft_lstfree ft_lst_to_dptr ft_lstfree_node \
+			ft_lstfind_to_dptr
 
 MEM_FILES := ft_bzero ft_calloc ft_memcmp ft_memcpy ft_memchr ft_memmove \
 			ft_memset ft_free_dptr ft_free_tptr
@@ -86,6 +88,8 @@ PRINTF_PUT_FILES := ft_putstr ft_write
 
 PRINT_FILES := ft_print_dptr ft_print_tptr
 
+MATH_FILES := len_token
+
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#
 
 SRC_FILES+=$(addprefix $(IS_DIR),$(IS_FILES))
@@ -100,6 +104,7 @@ SRC_FILES+=$(addprefix $(PRINTF_DIR),$(PRINTF_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PRINT_DIR),$(PRINTF_PRINT_FILES))
 SRC_FILES+=$(addprefix $(PRINTF_PUT_DIR),$(PRINTF_PUT_FILES))
 SRC_FILES+=$(addprefix $(PRINT_DIR),$(PRINT_FILES))
+SRC_FILES+=$(addprefix $(MATH_DIR),$(MATH_FILES))
 
 SRCS := $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS := $(addprefix $(OBJ_DIR), $(addsuffix .o, $(SRC_FILES)))
