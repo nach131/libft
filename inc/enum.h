@@ -6,17 +6,17 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/10 13:26:34 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/10 13:26:35 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/07/22 14:11:58 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ENUM_H
 # define ENUM_H
 
-typedef enum e_bool
+typedef enum e_power
 {
 	OFF,
 	ON,
-}	t_bool;
+}	t_power;
 
 #endif
