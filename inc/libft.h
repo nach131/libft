@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/07/21 12:30:33 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/03 23:30:35 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ void				ft_lstfree_node(t_list **lst);
 void				ft_print_dptr(char **arr);
 void				ft_print_tptr(char ***arr);
 
-int					len_token(char *str, char *token);
+int					ft_len_token(char *str, char *token);
+int					ft_len_dptr(char **arr);
 
 #endif

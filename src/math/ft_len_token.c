@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   len_token.c                                        :+:      :+:    :+:   */
+/*   ft_len_token.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/21 12:22:09 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/07/21 12:43:28 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/03 23:25:41 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 // Cuenta cuantos elementos separados por el token en un string
 
-int	len_token(char *str, char *token)
+int	ft_len_token(char *str, char *token)
 {
 	int	i;
 
