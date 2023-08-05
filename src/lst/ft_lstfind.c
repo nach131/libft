@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 11:39:37 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/07/20 23:57:07 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/04 17:57:04 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ t_list	*ft_lstfind(t_list *lst, void *data_ref, int (*cmp)(char *, char *))
 	while (curr)
 	{
 		if ((*cmp)(curr->content, data_ref) == 0)
-			break ;
+			return (curr);
 		curr = curr->next;
 	}
-	return (curr);
+	return (NULL);
 }
 
 // int	find_env(char *s1, char *s2)
