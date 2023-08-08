@@ -6,7 +6,7 @@
 #    By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/19 22:10:52 by nmota-bu          #+#    #+#              #
-#    Updated: 2023/08/05 18:01:45 by nmota-bu         ###   ########.fr        #
+#    Updated: 2023/08/08 13:28:48 by nmota-bu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,7 +88,7 @@ PRINTF_PUT_FILES := ft_putstr ft_write
 
 PRINT_FILES := ft_print_dptr ft_print_tptr
 
-MATH_FILES := ft_len_token ft_len_dptr
+MATH_FILES := ft_len_token ft_len_dptr ft_numdup
 
 
 # ═══ SOURCES ════════════════════════════════════════════════════════════════#

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/08/05 18:02:05 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/08 13:30:31 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,6 @@ void				ft_print_tptr(char ***arr);
 
 int					ft_len_token(char *str, char *token);
 int					ft_len_dptr(char **arr);
+int					*ft_numdup(int num);
 
 #endif
