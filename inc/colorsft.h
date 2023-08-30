@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 00:37:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/08/30 20:37:04 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/30 21:24:39 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 # define BLACK "\x1B[30m"
 
 // # Bold
-#define BRED "\x1B[1m\x1B[38;2;255;0;0m"
+#define BRED "\x1B[1m\x1B[38;2;230;50;50m"
 #define BGREEN "\x1B[1m\x1B[38;2;0;255;0m"
 # define BYELLOW "\033[1;33m"
 # define BBLUE "\033[1;34m"
@@ -38,7 +38,7 @@
 #define BBLACK "\033[1;30m"
 
 // # Italic
-#define IRED "\x1B[3m\x1B[31m"
+#define IRED "\x1B[3m\x1B[38;2;230;50;50m"
 #define IGREEN "\x1B[3m\x1B[32m"
 #define IYELLOW "\x1B[3m\x1B[33m"
 #define IBLUE "\x1B[3m\x1B[34m"
@@ -48,7 +48,7 @@
 #define IWHITE "\x1B[3m\x1B[37m"
 
 // # Underline
-#define URED "\x1B[4m\x1B[38;2;255;0;0m"
+#define URED "\x1B[4m\x1B[38;2;230;50;50m"
 #define UGREEN "\x1B[4m\x1B[38;2;0;255;0m"
 # define UYELLOW "\033[4;33m"
 # define UBLUE "\033[4;34m"
@@ -78,8 +78,6 @@
 # define FBLOCK "\u2588"
 # define EBLOCK "\u258d"
 # define FLECHAD "\u2911"
-
-#define JAJA "\xF0\x9F\x98\x84"
 
 #endif
 

@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 21:40:58 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/01/18 21:41:40 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/08/30 21:18:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 /* ║                 https://github.com/nach131/42Barcelona                 ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
 
-#include "../inc/colors.h"
+#include "../inc/colorsft.h"
 #include "../inc/ft_printf.h"
 
 void	dos(void)
