@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   emoji.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/08/30 20:37:28 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/08/30 21:10:48 by nmota-bu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef EMOJI_H
+# define EMOJI_H
+
+# define JAJA "\xF0\x9F\x98\x84"
+# define SUDOR "\xF0\x9F\x98\x85"
+# define FORK "\xF0\x9F\x8D\xB4"
+# define PIZZA "\xF0\x9F\x8D\x95"
+# define BURGUER "\xF0\x9F\x8D\x94"
+// # define SPLEEP "\xF0\x9F\x98\xB4"
+# define SPLEEP "\xF0\x9F\x92\xa4"
+# define TERROR "\xF0\x9F\x98\xB1"
+# define DISH "\xF0\x9F\x8D\xBD"
+
+#endif
+
+// JAJA 😄
+
+//SUDOR 😅
+// FORK🍴
+// PIZZA 🍕
+// SPLEEP 😴
+// SPLEEP💤
+// TERROR 😱
+// DISH 🍽
+// BURGUER 🍔
