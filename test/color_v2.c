@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 19:55:17 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/08/30 21:18:29 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/09/20 20:15:45 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,10 @@ int main(void)
 	printf("\x1B[43m\x1B[31mTexto rojo con fondo amarillo\x1B[0m\n");
 	printf("\x1B[41m\x1B[37mTexto blanco con fondo rojo\x1B[0m\n");
 	printf("\x1B[41m\x1B[1m\x1B[37mTexto blanco con fondo rojo y negrita\x1B[0m\n");
+	printf("\x1B[42m\x1B[37mTexto blanco con fondo verde\x1B[0m\n");
+	printf("\x1B[42m\x1B[94mTexto azul nebrita con fondo verde\x1B[0m\n");
+	printf("\x1B[42m\x1B[1;30mTexto negro en negrita con fondo verde\x1B[0m\n");
+
 	printf("\x1B[44m\x1B[33mTexto amarillo con fondo azul\x1B[0m\n");
 	printf("\x1B[41m\x1B[33mTexto amarillo con fondo rojo\x1B[0m\n");
 
