@@ -6,9 +6,14 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 21:39:31 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/11/28 21:48:29 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/11/28 21:52:14 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// Retorna el contenido de un fichero a un char doble puntero
+// Cada linea en una dirección diferente del array.
+// Primera linea arr[0], arr[1]...
+// incluye \n
 
 #include "get_next_line.h"
 
