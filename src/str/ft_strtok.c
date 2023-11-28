@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/26 23:45:48 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/27 14:34:06 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/11/07 11:57:06 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,25 +49,25 @@ char	*ft_strtok(char *str, const char *delim)
 	return (token_start);
 }
 
-// int main(void)
-// {
-// 	// char str[] = "Hello,World,How,Are,You";
-// 	char str[] = "env | grep PATH";
-// 	// char str[] = "env VAR1=valor1 VAR2=valor2 comando";
-// 	char *token;
+int main(void)
+{
+	// char str[] = "Hello,World,How,Are,You";
+	// char str[] = "env | grep PATH";
+	char str[] = "env VAR1=valor1 VAR2=valor2 comando";
+	char *token;
 
-//  Utilizar strtok para dividir la cadena en tokens utilizando
-//  la coma como delimitador
-// 	token = ft_strtok(str, " ");
+	//  Utilizar strtok para dividir la cadena en tokens utilizando
+	//  la coma como delimitador
+	token = ft_strtok(str, " ");
 
-// 	while (token != NULL)
-// 	{
-// 		// Imprimir el token actual
-// 		printf("%s\n", token);
+	while (token != NULL)
+	{
+		// Imprimir el token actual
+		printf("%s\n", token);
 
-// 		// Obtener el siguiente token
-// 		token = ft_strtok(NULL, " ");
-// 	}
+		// Obtener el siguiente token
+		token = ft_strtok(NULL, " ");
+	}
 
-// 	return (0);
-// }
+	return (0);
+}

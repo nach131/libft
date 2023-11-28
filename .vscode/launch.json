@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/libft_plus/src/err",
-      "program": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/libft_plus/src/err/build/Debug/outDebug"
+      "cwd": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/libft_plus/src/str",
+      "program": "/Volumes/1TB/Dropbox/00_42Barcelona/42Barcelona/libft_plus/src/str/build/Debug/outDebug"
     }
   ]
 }

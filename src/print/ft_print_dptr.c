@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/21 19:22:28 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/06/21 20:10:53 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/11/28 17:53:50 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-void	ft_print_dptr(char **arr)
+void ft_print_dptr(char **arr, int line)
 {
 	int	i;
 
@@ -29,7 +29,9 @@ void	ft_print_dptr(char **arr)
 		return ;
 	while (arr[i] != NULL)
 	{
-		ft_printf(GREEN "%s\n" WHITE, arr[i]);
+		ft_printf(GREEN "%s" WHITE, arr[i]);
+		if (line)
+			ft_printf("\n");
 		i++;
 	}
 }

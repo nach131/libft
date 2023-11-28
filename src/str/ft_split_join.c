@@ -1,36 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_split_join.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/13 17:35:47 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/05/11 12:12:09 by nmota-bu         ###   ########.fr       */
+/*   Created: 2023/11/23 11:00:55 by nmota-bu          #+#    #+#             */
+/*   Updated: 2023/11/23 11:35:19 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* ╔════════════════════════════════════════════════════════════════════════╗ */
-/* ║                 https://github.com/nach131/42Barcelona                 ║ */
+/* ║                      https://github.com/nach131                        ║ */
 /* ╚════════════════════════════════════════════════════════════════════════╝ */
-// Envía el caracter ’c’ al file descriptor dado.
-//	#1. El caracter a enviar.
-//	#2. El file descriptor sobre el que escribir.
+
+// Junta doble puntero de char en un puntero char
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+char *ft_split_join(char **split)
 {
-	write(fd, &c, sizeof(c));
+	int i;
+	char *res;
+
+	i = 0;
+	res = NULL;
+	while (split[i])
+	{
+		if (res == NULL)
+			res = ft_strdup(split[i]);
+		else
+			res = ft_strjoin(res, split[i]);
+		i++;
+	}
+	return (res);
 }
 
-//int	main(void)
-//{
-////	write(1, "T", 1);
-////	write(1, "A", 1);
-//	ft_putchar_fd('4', 1);
-//	ft_putchar_fd('2', 1);
-//	ft_putchar_fd('\n', 1);
-//return (0);
-//}
-// 42
+// int main(void)
+// {
+// 	char *split[] = {"uno,", "dos,", "tres", NULL};
+
+// 	char *res = ft_split_join(split);
+// 	printf("%s\n", res);
+// 	free(res);
+// }
+
+// uno,dos,tres

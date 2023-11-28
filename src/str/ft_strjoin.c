@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 13:22:54 by nmota-bu          #+#    #+#             */
-/*   Updated: 2022/11/21 19:01:20 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/11/28 17:55:10 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-	res = (char *)ft_calloc((len_s1 + len_s2 + 1), sizeof(*res));
+	res = (char *)malloc(len_s1 + len_s2 + 1);
 	if (!res)
 		return (0);
 	ft_memcpy(res, s1, len_s1);

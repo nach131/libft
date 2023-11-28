@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:07:40 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/08/08 13:30:31 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/11/28 21:46:50 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putuni(int n, char *str, char *color);
 char				**ft_file_to_dptr(char *file, int line);
+char				**ft_file_to_dptr_m(int fd);
 
 char				**ft_cp_dptr(char **ori);
 char				**ft_split(char const *s, char c);
@@ -66,6 +67,7 @@ char				*ft_strrev(char *str);
 size_t				ft_strspn(const char *s, const char *accept);
 char				*ft_strcpy(char *s1, char *s2);
 char				*ft_strtok(char *str, const char *delim);
+char				*ft_split_join(char **split);
 
 int					ft_atoi(const char *str);
 char				*ft_itoa(int n);
@@ -103,7 +105,7 @@ void				ft_lstfree(t_list *lst);
 char				**ft_lst_to_dptr(t_list **lst, int del);
 void				ft_lstfree_node(t_list **lst);
 
-void				ft_print_dptr(char **arr);
+void				ft_print_dptr(char **arr, int line);
 void				ft_print_tptr(char ***arr);
 
 int					ft_len_token(char *str, char *token);
