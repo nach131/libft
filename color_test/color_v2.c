@@ -6,7 +6,7 @@
 /*   By: nmota-bu <nmota-bu@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 19:55:17 by nmota-bu          #+#    #+#             */
-/*   Updated: 2023/09/20 20:15:45 by nmota-bu         ###   ########.fr       */
+/*   Updated: 2023/12/05 17:23:29 by nmota-bu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,12 @@ int main(void)
 
 	printf("\x1B[5m\x1B[37mTexto blanco parpadeante\x1B[0m\n");
 	printf("\x1B[1m\x1B[37mTexto blanco en negrita\x1B[0m\n");
+
+	printf("\x1B[46m\x1B[1;97mTexto en negrita blanco con fondo cyan\x1B[0m\n");
+	printf("\x1B[46m\x1B[1;30mTexto en negrita negro con fondo cyan\x1B[0m\n");
+	printf("\x1B[44m\x1B[1;97mTexto en negrita blanco con fondo azul\x1B[0m\n");
+    
+    printf("\x1B[35m\x1B[48mTexto en negrita blanco con fondo azul\x1B[0m\n");
 
 	printf("%s JAJA\n", JAJA);
 	printf("%s SUDOR\n", SUDOR);
